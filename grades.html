@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    
+    <div id="container">
+        <div class="top">
+            <div class="title">
+                Grades Program
+            </div>
+        </div>
+        <div class="buttons-cotainer">
+            <div class="button-input-pair">
+                <button id="getGradeButton">Get Grade</button>
+                <button id="seeGradesButton">See Grades</button>
+                <button id="addGradeButton">Add Grade</button>
+                <button id="editGradeButton">Edit Grade</button>
+            </div>
+        </div>
+        <div class="display">
+            <input type="text" id="editStudentName" placeholder="Student Name">
+            <input type="number" id="editStudentGrade" placeholder="New grade">
+        </div>
+        <div id="popupContainer"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
